@@ -6,6 +6,7 @@ const Index = () => {
 		<div>
 			<Head>
 				<title>Make This Taco</title>
+				<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🌮</text></svg>"></link>
 			</Head>
 			<div className="wrapper">
 				<div className="site-title">Make This Taco</div>
@@ -38,7 +39,7 @@ const Index = () => {
 				min-height: 100vh;
 				background: url('/images/tacos.jpg') no-repeat;
 				background-size: cover;
-				color: hsl(33, 100%, 14%);
+				color: hsl(33, 100%, 8%);
 				font-family: "Public Sans", system-ui, sans-serif;
 				font-size: 1.15rem;
 				line-height: 1.6;
@@ -124,10 +125,10 @@ const Index = () => {
 				font-size: 3rem;
 				font-family: Kalam;
 				line-height: 1;
-				text-shadow: 1px 1px hsl(33, 100%, 29%),
-							 1px 2px hsl(33, 100%, 29%),
-							 1px 3px hsl(33, 100%, 29%),
-							 1px 4px hsl(33, 100%, 29%);
+				text-shadow: 1px 1px hsl(33, 100%, 24%),
+							 1px 2px hsl(33, 100%, 24%),
+							 1px 3px hsl(33, 100%, 24%),
+							 1px 4px hsl(33, 100%, 24%);
 				color: #fff;
 				clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
 				white-space: nowrap;
