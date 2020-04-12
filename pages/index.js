@@ -37,6 +37,8 @@ const Index = () => {
 
 			body {
 				display: grid;
+				width: 100%;
+				height: 100%;
 				min-width: 100vw;
 				min-height: 100vh;
 				background: url('/images/tacos.jpg') no-repeat;
@@ -56,8 +58,24 @@ const Index = () => {
 				bottom: 0;
 				left: 0;
 				background: linear-gradient(145deg, hsl(33, 100%, 49%), hsl(359, 89%, 24%) 100%);
+				/* background-size: 400% 400%; */
 				content: '';
 				opacity: 0.8;
+				/* animation: 3s slide infinite linear; */
+			}
+
+			@keyframes slide {
+				0% {
+					background-position: 0% 0%;
+				}
+
+				50% {
+					background-position: 100% 100%;
+				}
+
+				100% {
+					background-position: 0% 0%;
+				}
 			}
 
 			a {
@@ -124,8 +142,9 @@ const Index = () => {
 				left: 50%;
 				transform: translateX(-50%);
 				background: hsl(33, 100%, 49%);
-				font-size: 3rem;
 				font-family: Kalam;
+				font-weight: bold;
+				font-size: 3rem;
 				line-height: 1;
 				text-shadow: 1px 1px hsl(33, 100%, 24%),
 							 1px 2px hsl(33, 100%, 24%),

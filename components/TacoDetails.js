@@ -30,7 +30,6 @@ const TacoDetails = ({ recipe }) => {
 
 			.recipe {
 				width: 60ch;
-				min-height: 500px;
 				max-height: 600px;
 				overflow-x: hidden;
 				overflow-y: scroll;
