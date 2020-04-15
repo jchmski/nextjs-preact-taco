@@ -129,7 +129,7 @@ const Index = () => {
 				top: -30px;
 				left: 50%;
 				transform: translateX(-50%);
-				background: hsl(33, 100%, 49%);
+				background: hsl( 33, 100%, 43%);
 				font-family: Kalam;
 				font-weight: bold;
 				font-size: 3rem;
