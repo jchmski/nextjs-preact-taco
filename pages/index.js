@@ -114,8 +114,8 @@ const Index = () => {
 			<style jsx>{`
 			.wrapper {
 				width: 100%;
-				min-width: 300px;
-				min-height: 200px;
+				min-width: 509px;
+				min-height: 254px;
 				position: relative;
 				background: #fff;
 				border-radius: 10px;
