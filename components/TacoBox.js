@@ -34,8 +34,6 @@ const TacoBox = () => {
 			<style jsx>{`
 			button {
 				display: block;
-				min-width: 300px;
-				min-height: 200px;
 				background: linear-gradient(150deg, hsl(33, 100%, 54%), hsl(20, 100%, 49%) 100%);
 				font-family: Kalam, sans-serif;
 				font-size: 1.5rem;
