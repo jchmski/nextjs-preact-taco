@@ -6,6 +6,7 @@ const Index = () => {
 		<div>
 			<Head>
 				<title>Make This Taco</title>
+				<meta rel="description" content="Yummy taco recipes served up with netlify functions!" />
 				<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🌮</text></svg>"></link>
 			</Head>
 			<div className="wrapper">
@@ -61,21 +62,6 @@ const Index = () => {
 				/* background-size: 400% 400%; */
 				content: '';
 				opacity: 0.8;
-				/* animation: 3s slide infinite linear; */
-			}
-
-			@keyframes slide {
-				0% {
-					background-position: 0% 0%;
-				}
-
-				50% {
-					background-position: 100% 100%;
-				}
-
-				100% {
-					background-position: 0% 0%;
-				}
 			}
 
 			a {
