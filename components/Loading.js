@@ -28,7 +28,7 @@ const Loading = () => (
 			text-align: center;
 			font-size: 3rem;
 			margin-bottom: 20px;
-			animation: 1.5s load infinite linear;
+			animation: 1250ms load infinite linear;
 		}
 		`}</style>
 	</div>

@@ -30,7 +30,7 @@ const TacoBox = () => {
 	return (
 		<div>
 			{recipe && <TacoDetails recipe={recipe} />}
-			{recipe && <button onClick={() => mutate(taco_api, true)}>Next 🌮</button>}
+			{recipe && <button onClick={() => mutate(taco_api, true)}><span className="next">Next</span><span className="taco">🌮</span></button>}
 			<style jsx>{`
 			button {
 				display: block;
@@ -38,18 +38,80 @@ const TacoBox = () => {
 				font-family: Kalam, sans-serif;
 				font-size: 1.5rem;
 				color: #fff;
-				border: 3px solid hsl(33, 100%, 74%);
+				border: 1px solid hsl(33, 100%, 54%);
+				box-shadow: 0 0 0 2px hsl(33, 100%, 74%);
 				border-radius: 10px;
 				text-transform: uppercase;
 				letter-spacing: 0.05em;
 				cursor: pointer;
-				padding: 11px 20px 7px;
+				padding: 11px 40px 7px;
 				margin: 0 auto;
 			}
 
-			button:hover {
-				background: hsl(20, 100%, 49%);
+			button:hover, button:focus {
+				background: linear-gradient(150deg, hsl(33, 100%, 58%), hsl(20, 100%, 53%) 100%);
+				box-shadow: 0 0 0 4px hsl(33, 100%, 74%);
+				outline: none;
 			}
+
+			button > span {
+				display: inline-block;
+			}
+
+			button:hover > .next {
+				animation: bouncy-words 500ms infinite linear;
+			}
+
+			button:active {
+				background: linear-gradient(150deg, hsl(33, 100%, 52%), hsl(20, 100%, 46%) 100%);
+			}
+
+			@keyframes bouncy-words {
+				0% {
+					transform: translateY(0);
+				}
+
+				33% {
+					transform: translateY(1px);
+				}
+
+				66% {
+					transform: translateY(-1px);
+				}
+
+				100% {
+					transform: translateY(0);
+				}
+			}
+
+			button > .taco {
+				margin-left: 10px;
+			}
+
+			button:hover > .taco {
+				animation: bouncy-taco 1500ms infinite linear;
+			}
+
+			@keyframes bouncy-taco {
+				0% {
+					transform: translateY(0);
+				}
+
+				5% {
+					transform: translateY(1px);
+				}
+
+				35% {
+					transform: translateY(-4px) rotate(120deg);
+				}
+
+				90% {
+					transform: translateY(0) rotate(360deg);
+				}
+
+				100% {
+					transform: translateY(0) rotate(360deg);
+				}
 			`}
 			</style>
 		</div>
