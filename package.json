@@ -7,7 +7,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "marked": "^0.8.2",
+    "marked": "^4.0.10",
     "next": "^9.3.4",
     "preact": "^10.4.0",
     "preact-render-to-string": "^5.1.6",
